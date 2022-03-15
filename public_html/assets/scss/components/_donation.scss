@@ -1,0 +1,17 @@
+.donation {
+  background-color: $gray-100;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  &--head {
+    text-align: center;
+    color: #444;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 0;
+  }
+
+  &--body {
+    padding: 25px 20px;
+  }
+}

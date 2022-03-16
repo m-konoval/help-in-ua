@@ -33,7 +33,7 @@ $(document).ready(function () {
   });
 });
 
-const copyIBAN = async (IBAN) => {
+const copyToBuffer = async (IBAN) => {
   try {
     /* Copy the text inside the text field */
     await navigator.clipboard.writeText(IBAN);
@@ -41,6 +41,11 @@ const copyIBAN = async (IBAN) => {
     /* Alert the copied text */
     alert("Text copied: " + IBAN);
   } catch (e) {
-    console.warn(e)
+    console.warn(e);
   }
+};
+
+const scrollToDonation = () => {
+  const toView = document.getElementById("donation").offsetTop;
+  window.scrollTo({ top: toView, behavior: "smooth" });
 };

@@ -39,7 +39,7 @@
     </div>
   </nav>
 
-  <!-- INTRO -->
+  <!-- HEADER -->
   <header class="header d-flex justify-content-center">
 
     <!-- VIDEO BG -->
@@ -61,28 +61,15 @@
             <p>
               Don't be aside. Any donation can help to save somebody's life.
             </p>
-          </div>
-        </div>
-        <div class="col-md-5 d-md-block donation text-secondary">
-          <div class="donation--head">Donation account:</div>
-          <div class="donation--body">
-            <div class="mb-5 pb-2">
-              <p>USD($) Account</p>
-              <a onclick="copyIBAN('UA183052990262096400930364920')" title="Click to copy">IBAN: <strong>UA183052990262096400930364920</strong></a>
-            </div>
-
-            <div class="mb-2 pb-2">
-              <p>UAH(₴) Account</p>
-              <a onclick="copyIBAN('UA443052990000026205744143753')" title="Click to copy">IBAN: <strong>UA443052990000026205744143753</strong></a>
-            </div>
+            <button class="btn btn-outline-light btn-flat" onclick="scrollToDonation()">Donate</button>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- INFO -->
-  <section class="section" id="features">
+  <!-- INFO ABOUT -->
+  <section class="section">
     <div class="container text-center pb-5">
       <h6 class="display-4 has-line">The situation in Ukraine</h6>
 
@@ -121,8 +108,79 @@
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- CONTACT -->
+  <!-- DONATIONS -->
+  <section class="section" id="donation">
+    <div class="container">
+      <h6 class="display-4 has-line text-center mb-5 text-light">Charity</h6>
+      <div class="row justify-content-between align-items-md-stretch">
+
+        <!-- USD -->
+        <div class="col-md-6 mb-5 row">
+          <div class="donation text-secondary col-md-12">
+            <div class="donation--head">USD Account details</div>
+            <div class="donation--body">
+              <p>Company name: <a onclick="copyToBuffer('Individual Entrepreneur Vovnenko Sergii')"
+                  title="Натисни щоб скопіювати">
+                  <strong>Individual Entrepreneur Vovnenko Sergii</strong>
+                </a>
+              </p>
+              <p>Bank Swift:
+                <a onclick="copyToBuffer('PBANUA2X')" title="Натисни щоб скопіювати">
+                  <strong>PBANUA2X</strong>
+                </a>
+              </p>
+              <p>Bank name:
+                <a onclick="copyToBuffer(`JSC CB &#34;PRIVATBANK&#34;`)" title="Натисни щоб скопіювати">
+                  <strong>JSC CB "PRIVATBANK"</strong>
+                </a>
+              </p>
+              <p>IBAN:
+                <a onclick="copyToBuffer('UA63305299000006004020120129')" title="Натисни щоб скопіювати">
+                  <strong>UA63305299000006004020120129</strong>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- UAH -->
+        <div class="col-md-6 mb-5 row">
+          <div class="donation text-secondary col-md-12">
+            <div class="donation--head">UAH Account details</div>
+            <div class="donation--body">
+              <p>Company name: <a onclick="copyToBuffer('ФОП Вовненко Сергій Анатолійович')"
+                  title="Натисни щоб скопіювати">
+                  <strong>ФОП Вовненко Сергій Анатолійович</strong>
+                </a>
+              </p>
+              <p>Recipient Code:
+                <a onclick="copyToBuffer('3008819835')" title="Натисни щоб скопіювати">
+                  <strong>3008819835</strong>
+                </a>
+              </p>
+              <p>Bank name:
+                <a onclick="copyToBuffer('АТ КБ &#34;ПРИВАТБАНК&#34;')" title="Натисни щоб скопіювати">
+                  <strong>АТ КБ "ПРИВАТБАНК"</strong>
+                </a>
+              </p>
+              <p>IBAN:
+                <a onclick="copyToBuffer('UA703052990000026003040133465')" title="Натисни щоб скопіювати">
+                  <strong>UA703052990000026003040133465</strong>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- end section -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & CONTACT -->
+  <section class="section">
     <div class="container text-center">
       <h6 class="display-4 has-line">ABOUT ME</h6>
       <p class="mb-5 pb-2">

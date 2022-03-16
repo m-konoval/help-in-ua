@@ -33,9 +33,7 @@ $(document).ready(function () {
   });
 });
 
-const copyIBAN = async () => {
-  const IBAN = "UA183052990262096400930364920";
-
+const copyIBAN = async (IBAN) => {
   try {
     /* Copy the text inside the text field */
     await navigator.clipboard.writeText(IBAN);
